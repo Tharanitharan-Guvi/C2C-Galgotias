@@ -1,4 +1,10 @@
-# C2C Galgotias University
+# Guvi C2C-Galgotias University - Python Workshop
+
+## Three Steps to Successful Problem Solving in Coding
+
+1. Ensure a thorough understanding of the question.
+2. Formulate a strategic approach to solving the problem.
+3. Begin the coding process.
 
 ## Question 4
 
@@ -54,7 +60,7 @@ for num in nums:
 
 ```python
 # Program
-num = 12345
+num = int(input())
 num_str = str(num)
 reversed_str = num_str[::-1]
 print(int(reversed_str))
@@ -75,7 +81,7 @@ print(int(reversed_str))
 
 ```python
 # Program
-num = 12345
+num = int(input())
 reversed_num = 0
 
 while num != 0:
@@ -84,29 +90,6 @@ while num != 0:
     num = num // 10
 
 print(reversed_num)
-```
-
-### Approach - 3 Convert to Strings and List, Reverse, and Join
-
-```
-# Pseudo Code
-- Input: Integer 'num'
-- Convert 'num' to a string
-- Convert the string to a list of characters
-- Reverse the list
-- Join the list to form a string
-- Convert the string back to an integer
-- Print the reversed integer
-```
-
-```python
-# Program
-num = 12345
-num_str = str(num)
-char_list = list(num_str)
-char_list.reverse()
-reversed_str = ''.join(char_list)
-print(int(reversed_str))
 ```
 
 ## Question 8
@@ -123,6 +106,7 @@ You are given a list of numbers `L=[12, 13, 14, 15, 21]`. Write a Python program
 l = [12, 13, 14, 15, 21]
 print(sum(l))
 print(len(l))
+print(l[:3])
 ```
 
 ### Approach 2: Using While Loop
@@ -138,6 +122,7 @@ while index < length:
     index += 1
 
 print(sum)
+print(l[:3])
 ```
 
 ### Approach 3: Using For Loop
@@ -154,6 +139,7 @@ for i in l:
 
 print(sum)
 print(length)
+print(l[:3])
 ```
 
 **Note:** For the third operation (`L[:3]`), only one possible answer can be provided.
